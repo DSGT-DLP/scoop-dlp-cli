@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install eslint
-      - run: npm run lint -- --fix --ext .json
+      - run: eslint --fix --ext .json
   test_powershell:
     name: WindowsPowerShell
     runs-on: windows-latest
