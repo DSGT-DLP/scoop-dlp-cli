@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  eslint:
+  prettier:
     name: Format Code
     runs-on: ubuntu-latest
     steps:
@@ -21,11 +21,10 @@ jobs:
           ref: ${{ github.head_ref }}
           # Make sure the value of GITHUB_TOKEN will not be persisted in repo's config
           persist-credentials: false
-      - uses: actions/setup-node@v2
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
         with:
-          node-version: 16
-      - run: npm install -g eslint
-      - run: eslint --fix --ext .json
+          prettier_options: --write bucket/*.json
   test_powershell:
     name: WindowsPowerShell
     runs-on: windows-latest
