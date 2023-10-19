@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  prettier:
+  eslint:
     name: Format Code
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: npm install eslint
+      - run: npm install -g eslint
       - run: eslint --fix --ext .json
   test_powershell:
     name: WindowsPowerShell
