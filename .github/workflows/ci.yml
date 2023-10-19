@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  prettier:
     name: Format Code
     runs-on: ubuntu-latest
     steps:
@@ -18,10 +18,14 @@ jobs:
         with:
           # Full git history is needed to get a proper list of changed files within `auto-formatter`
           fetch-depth: 0
-      - name: Auto-Formatter
-        uses: mezgoodle/auto-formatter@v1.0.2
-        env:
-            GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          ref: ${{ github.head_ref }}
+          # Make sure the value of GITHUB_TOKEN will not be persisted in repo's config
+          persist-credentials: false
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
+        with:
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write **/*.{json}
   test_powershell:
     name: WindowsPowerShell
     runs-on: windows-latest
