@@ -3,23 +3,17 @@
     "architecture": {
         "32bit": {
             "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.0/dlp-cli_Windows_i386.zip",
-            "bin": [
-                "dlp-cli.exe"
-            ],
+            "bin": ["dlp-cli.exe"],
             "hash": "a7ebd1fb729566b5a909c5538d46bb6111a18c617f24d80d537265667b3d8bed"
         },
         "64bit": {
             "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.0/dlp-cli_Windows_x86_64.zip",
-            "bin": [
-                "dlp-cli.exe"
-            ],
+            "bin": ["dlp-cli.exe"],
             "hash": "461388c1a60ea6de01bcab92a12f29bd8eee8bd693bfba00c433735392c3e1a0"
         },
         "arm64": {
             "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.0/dlp-cli_Windows_arm64.zip",
-            "bin": [
-                "dlp-cli.exe"
-            ],
+            "bin": ["dlp-cli.exe"],
             "hash": "e7edf55482bf7cfa8b1868592baed4460ff3dfea9d066013186143e5720ef912"
         }
     },
