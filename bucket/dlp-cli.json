@@ -1,20 +1,20 @@
 {
-    "version": "0.3.0",
+    "version": "0.3.1",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.0/dlp-cli_Windows_i386.zip",
+            "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.1/dlp-cli_Windows_i386.zip",
             "bin": ["dlp-cli.exe"],
-            "hash": "a7ebd1fb729566b5a909c5538d46bb6111a18c617f24d80d537265667b3d8bed"
+            "hash": "7bdb38c19b081a18c1e94f772e0ebdeed163c29ad34f2820ba17fa2e6c77dd13"
         },
         "64bit": {
-            "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.0/dlp-cli_Windows_x86_64.zip",
+            "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.1/dlp-cli_Windows_x86_64.zip",
             "bin": ["dlp-cli.exe"],
-            "hash": "461388c1a60ea6de01bcab92a12f29bd8eee8bd693bfba00c433735392c3e1a0"
+            "hash": "f369ca0ffc634753ac7c0afa2e2e29a2bea9146049a0f99db0cdf1b2d5f66e6c"
         },
         "arm64": {
-            "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.0/dlp-cli_Windows_arm64.zip",
+            "url": "https://github.com/DSGT-DLP/dlp-cli/releases/download/v0.3.1/dlp-cli_Windows_arm64.zip",
             "bin": ["dlp-cli.exe"],
-            "hash": "e7edf55482bf7cfa8b1868592baed4460ff3dfea9d066013186143e5720ef912"
+            "hash": "c4eb9b87e79a309c59f26d2507a559aa10020dfbeaf8cd08b979e64b889d6058"
         }
     },
     "homepage": "https://github.com/DSGT-DLP/dlp-cli",
